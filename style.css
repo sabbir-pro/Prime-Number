@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #305170, #6DFC6B);
+    overflow: hidden;
+}
+.main {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.main input {
+    margin-bottom: 15px;
+    padding: 0 20px;
+    height: 30px;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #bab5b55c;
+    border-radius: 20px;
+}
+.main button {
+    outline: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 8px;
+    background: linear-gradient(to right, #3CA55C 0%, #B5AC49  51%, #3CA55C  100%);
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+  
+.output {
+    width: 40%;
+    height: 400px;
+    background-color: #dbdbdb;
+    margin-top: 0px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid #d3d3d39b;
+    border-radius: 10px;
+    box-shadow: #00000040 0px 0.0625em 0.0625em, #00000040 0px 0.125em 0.5em, #ffffff1a 0px 0px 0px 1px inset;
+}
+.output .head {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: #dbdbdb;
+    border-bottom: 1px solid black;
+    box-shadow: #00000040 0px 0.0625em 0.0625em, #00000040 0px 0.125em 0.5em, #ffffff1a 0px 0px 0px 1px inset;
+}
+.output .head #result {
+    color: red;
+    margin-left: 5px;
+}
+.numberdiv {
+    width: 90%;
+}
+#primeNumbers {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
